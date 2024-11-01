@@ -1,0 +1,87 @@
+.home{
+    .features{
+        background-color: #f1fdf7;
+        display: flex;
+        justify-content: center;
+        padding: 80px 0px;
+
+        &.dark{
+            background-color: #fafafa;
+        }
+        .button {
+            background-color: black; /* Solid button color */
+            color: white; /* White text */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: bold; /* Make text bold */
+            width: max-content;
+        }
+        
+        .button:hover {
+            background-color: gray; /* Darken the button on hover */
+        }        
+
+        .container {
+            width: 1400px;
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            .item{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                &:first-child {
+                    flex: 2; 
+                    margin-left: 40px;              
+                }
+
+                &:last-child {
+                    flex: 3;               
+                }
+                h2 {
+                    font-size: 2.0rem; // Adjust font size
+                    font-weight: 500; // Make the font bold
+                    text-align: left; 
+                    margin-bottom: 10px; 
+                    line-height: 1.3; 
+                    color: #333; 
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 300;
+                    color: gray;
+                    line-height: 25px;
+                    letter-spacing: 1px;
+                }
+                .title{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: gray;
+                }
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+
+                .business-image {
+                    width: 100%; // Make it responsive
+                    height: auto; // Maintain aspect ratio
+                    max-width: 800px; // Limit the maximum width
+                    display: block; // Ensure the image takes up its own block
+                    margin: 0 auto; // Center the image
+                }
+                
+                video{
+                    width: 600px;
+                }
+            }
+        }
+    }
+}
